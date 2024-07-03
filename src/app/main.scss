@@ -24,11 +24,22 @@ $filter: linear-gradient(-180deg, #ffc593 0%, #bc7198 52%, #5a77ff 100%);
   letter-spacing: 4px;
 }
 
+.header-font-medium {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
 .header-font-small {
   font-weight: bold;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 2px;
+}
+
+.card-font-content {
+  font-weight: 400;
+  font-size: 13px;
 }
 
 @import "../components/navbar/navbar.scss";

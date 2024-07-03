@@ -1,17 +1,15 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Navbar() {
   return (
     <div className="navbar">
       <p>
-        <Image
+        <img
+          className="logo"
           src="/assets/shared/desktop/logo.svg"
           alt="logo"
-          width={160}
-          height={16}
         />{" "}
       </p>
       <div>
