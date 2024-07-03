@@ -21,6 +21,7 @@
     }
   }
   button {
+    margin-top: 10px;
     @extend .header-font-small;
     background: $black;
     color: $white;

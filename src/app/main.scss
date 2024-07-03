@@ -28,4 +28,5 @@ $filter: linear-gradient(-180deg, #ffc593 0%, #bc7198 52%, #5a77ff 100%);
   letter-spacing: 2px;
 }
 
-@import "../components/navbar.scss";
+@import "../components/navbar/navbar.scss";
+@import "../components/footer/footer.scss";
