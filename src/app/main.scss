@@ -1,0 +1,31 @@
+// colors
+
+$black: #000;
+$white: #fff;
+$light-grey: #dfdfdf;
+
+$filter: linear-gradient(-180deg, #ffc593 0%, #bc7198 52%, #5a77ff 100%);
+
+// fonts
+
+.body-font {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.header-font-large {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 4px;
+}
+
+.header-font-small {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+}
+
+@import "../components/navbar.scss";
