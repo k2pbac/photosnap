@@ -21,7 +21,17 @@
       .icons {
         display: flex;
         justify-content: space-between;
-        filter: $white-filter;
+        #facebook,
+        #twitter,
+        #pinterest,
+        #instagram,
+        #youtube {
+          filter: $white-filter;
+          &:hover {
+            cursor: pointer;
+            filter: initial !important;
+          }
+        }
       }
     }
     .page-links {
@@ -34,6 +44,11 @@
         flex-direction: column;
         height: 100%;
         gap: 16px;
+        li {
+          &:hover a {
+            opacity: 0.3;
+          }
+        }
       }
     }
   }
@@ -43,17 +58,22 @@
     display: flex;
     flex-direction: column;
     gap: 82px;
-    p {
-      display: flex;
-      gap: 12px;
-      justify-content: flex-end;
-      img {
-        filter: $white-filter;
+    a {
+      &:hover p span {
+        text-decoration: underline;
       }
-      &:last-of-type {
-        @extend .body-font;
-        opacity: 0.52;
+      p {
+        display: flex;
+        gap: 12px;
+        justify-content: flex-end;
+        img {
+          filter: $white-filter;
+        }
       }
+    }
+    p.copyright {
+      @extend .body-font;
+      opacity: 0.52;
     }
   }
 }

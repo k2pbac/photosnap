@@ -14,30 +14,35 @@ export default function Footer() {
           ></Image>
           <div className="icons">
             <Image
+              id="facebook"
               src="/assets/shared/desktop/facebook.svg"
               alt="facebook-icon"
               width={20}
               height={20}
             ></Image>
             <Image
+              id="youtube"
               src="/assets/shared/desktop/youtube.svg"
               alt="youtube-icon"
               width={20}
               height={20}
             ></Image>
             <Image
+              id="twitter"
               src="/assets/shared/desktop/twitter.svg"
               alt="twitter-icon"
               width={20}
               height={20}
             ></Image>
             <Image
+              id="pinterest"
               src="/assets/shared/desktop/pinterest.svg"
               alt="pinterest-icon"
               width={20}
               height={20}
             ></Image>
             <Image
+              id="instagram"
               src="/assets/shared/desktop/instagram.svg"
               alt="instagram-icon"
               width={20}
@@ -63,16 +68,18 @@ export default function Footer() {
         </div>
       </div>
       <div className="invite">
-        <p>
-          GET AN INVITE{" "}
-          <Image
-            src="/assets/shared/desktop/arrow.svg"
-            alt="arrow"
-            width={42}
-            height={16}
-          ></Image>
-        </p>
-        <p>Copyright 2019. All Rights Reserved</p>
+        <Link href="/">
+          <p>
+            <span>GET AN INVITE </span>
+            <Image
+              src="/assets/shared/desktop/arrow.svg"
+              alt="arrow"
+              width={42}
+              height={16}
+            ></Image>
+          </p>
+        </Link>
+        <p className="copyright">Copyright 2019. All Rights Reserved</p>
       </div>
     </div>
   );
