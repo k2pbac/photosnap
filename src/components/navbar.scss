@@ -12,17 +12,23 @@
     align-items: center;
     padding-top: 10px;
     li {
-      font-size: 12px;
-      font-weight: bold;
-      letter-spacing: 2px;
+      @extend .header-font-small;
+      transition: 0.3s ease;
+      &:hover {
+        opacity: 0.3;
+        cursor: pointer;
+      }
     }
   }
   button {
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 2px;
+    @extend .header-font-small;
     background: $black;
     color: $white;
     padding: 12px 24px;
+    transition: 0.3s ease;
+    &:hover {
+      background-color: $light-grey;
+      color: $black;
+    }
   }
 }
