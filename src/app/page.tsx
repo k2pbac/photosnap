@@ -1,5 +1,3 @@
-// import Image from "next/image";
-
 import Card from "@/components/card/card";
 import Image from "next/image";
 

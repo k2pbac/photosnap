@@ -2,12 +2,18 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import filter from "../../app/_colors.module.scss";
+
+interface Style {
+  backgroundColor: string;
+  color: string;
+}
 
 interface Props {
   title: string;
   body: string;
   link: string;
-  style: object;
+  style: Style;
 }
 
 export default function Card(props: Props) {
@@ -19,8 +25,11 @@ export default function Card(props: Props) {
         <div className="invite">
           <Link href="/">
             <p>
-              <span>GET AN INVITE </span>
+              <span>{props.link}</span>
               <Image
+                className={`${
+                  props.style.backgroundColor === "white" ? "black" : ""
+                }`}
                 src="/assets/shared/desktop/arrow.svg"
                 alt="arrow"
                 width={42}

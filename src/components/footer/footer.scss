@@ -69,6 +69,9 @@
       img {
         filter: $white-filter;
       }
+      img.black {
+        filter: $black-filter;
+      }
     }
   }
   p.copyright {
