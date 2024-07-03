@@ -1,0 +1,16 @@
+.section-1,
+.section-2,
+.section-3 {
+  height: 650px;
+  max-width: 100%;
+  display: flex;
+  .tile-image {
+    max-width: 100%;
+    width: fit-content;
+  }
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}

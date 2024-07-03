@@ -1,0 +1,26 @@
+.card-outter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px;
+  width: 650px;
+  .card-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    h2 {
+      @extend .header-font-large;
+    }
+    p.body {
+      @extend .body-font;
+      opacity: 0.6;
+    }
+
+    .invite {
+      gap: 0;
+      height: fit-content;
+    }
+  }
+}
