@@ -15,7 +15,9 @@
 
 # production
 /build
-
+*.xd
+*.fig
+*.sketch
 # misc
 .DS_Store
 *.pem
