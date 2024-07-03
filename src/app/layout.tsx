@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import "./main.scss";
+import Navbar from "@/components/navbar";
 
 const dm = DM_Sans({ subsets: ["latin"] });
 
@@ -17,7 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={dm.className}>{children}</body>
+      <body className={dm.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

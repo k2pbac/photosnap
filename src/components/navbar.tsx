@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -15,9 +16,15 @@ export default function Navbar() {
       </p>
       <div>
         <ul>
-          <li>STORIES</li>
-          <li>FEATURE</li>
-          <li>PRICING</li>
+          <Link href="/stories">
+            <li>STORIES</li>
+          </Link>
+          <Link href="/features">
+            <li>FEATURE</li>
+          </Link>
+          <Link href="/pricing">
+            <li>PRICING</li>
+          </Link>
         </ul>
       </div>
       <button type="button">GET AN INVITE</button>
