@@ -24,6 +24,12 @@ $filter: linear-gradient(-180deg, #ffc593 0%, #bc7198 52%, #5a77ff 100%);
   letter-spacing: 4px;
 }
 
+.header-font-medium {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
 .header-font-small {
   font-weight: bold;
   font-size: 12px;
@@ -31,7 +37,13 @@ $filter: linear-gradient(-180deg, #ffc593 0%, #bc7198 52%, #5a77ff 100%);
   letter-spacing: 2px;
 }
 
+.card-font-content {
+  font-weight: 400;
+  font-size: 13px;
+}
+
 @import "../components/navbar/navbar.scss";
 @import "../components/footer/footer.scss";
 @import "./home.scss";
 @import "../components/card/card.scss";
+@import "../components/story-card/story-card.scss";

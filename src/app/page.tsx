@@ -1,5 +1,7 @@
 import Card from "@/components/card/card";
-import Image from "next/image";
+
+import data from "../../data.json";
+import StoryCardList from "@/components/story-card/story-card-list";
 
 export default function Home() {
   return (
@@ -11,22 +13,18 @@ export default function Home() {
           link="GET AN INVITE"
           style={{ backgroundColor: "black", color: "white" }}
         />
-        <Image
+        <img
           className="tile-image"
           src="/home/desktop/create-and-share.jpg"
           alt="create-image"
-          width={650}
-          height={650}
-        ></Image>
+        ></img>
       </div>
       <div className="section-2">
-        <Image
+        <img
           className="tile-image"
           src="/home/desktop/beautiful-stories.jpg"
-          alt="create-image"
-          width={650}
-          height={650}
-        ></Image>
+          alt="beautiful-image"
+        ></img>
         <Card
           title="BEAUTIFUL STORIES EVERY TIME"
           body="We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone."
@@ -41,14 +39,13 @@ export default function Home() {
           link="VIEW THE STORIES"
           style={{ backgroundColor: "white", color: "black" }}
         />
-        <Image
+        <img
           className="tile-image"
           src="/home/desktop/designed-for-everyone.jpg"
-          alt="create-image"
-          width={650}
-          height={650}
-        ></Image>
+          alt="designed-image"
+        ></img>
       </div>
+      <StoryCardList list={data} amount={4} />
     </main>
   );
 }
