@@ -1,0 +1,33 @@
+.features-list {
+  height: 460px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 0 86px;
+  .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 350px;
+    div {
+      height: 200px;
+    }
+    .image-container {
+      height: 72px;
+      margin-bottom: 40px;
+    }
+    h2 {
+      @extend .header-font-medium;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+
+    p {
+      @extend .body-font;
+      opacity: 0.6;
+    }
+  }
+}
