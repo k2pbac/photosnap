@@ -34,5 +34,5 @@ export default function PriceCardList() {
     setCardsList(priceCards);
   }, []);
 
-  return <div>{cardsList}</div>;
+  return <div className="price-card-list">{cardsList}</div>;
 }

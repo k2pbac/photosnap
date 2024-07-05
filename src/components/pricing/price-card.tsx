@@ -33,6 +33,7 @@ export default function PriceCard(props: Props) {
       <h3>
         {costText.price} <span>{costText.type}</span>
       </h3>
+      <button className="button">PICK PLAN</button>
     </div>
   );
 }
