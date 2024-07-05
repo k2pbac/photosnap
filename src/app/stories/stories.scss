@@ -1,0 +1,38 @@
+.stories {
+  .header {
+    position: relative;
+    .featured-story {
+      color: $white;
+      width: 400px;
+      height: auto;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      left: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+      .sub-header {
+        @extend .header-font-small;
+      }
+      h2 {
+        @extend .header-font-large;
+      }
+      .date {
+        @extend .card-font-content;
+        span {
+          opacity: 0.75;
+        }
+      }
+      .content {
+        @extend .body-font;
+        opacity: 0.6;
+      }
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}

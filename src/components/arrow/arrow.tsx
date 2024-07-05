@@ -4,9 +4,10 @@ export default function Arrow(props: {
   text: string;
   isFooter: boolean;
   className: string;
+  style?: object;
 }) {
   return (
-    <div className="invite">
+    <div className="invite" style={props.style}>
       <Link href="/">
         <p>
           <span className="whitespace-nowrap">{props.text} </span>

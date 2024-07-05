@@ -5,7 +5,11 @@ import StoryCard from "./story-card";
 import Card from "../../interface/index";
 import { useEffect, useState } from "react";
 
-export default function StoryCardList(props: { list: Card[]; amount: number }) {
+export default function StoryCardList(props: {
+  list: Card[];
+  amount: number;
+  showDate?: boolean;
+}) {
   const [cardsList, setCardsList] = useState<React.ReactElement[]>([]);
 
   useEffect(() => {
@@ -19,7 +23,7 @@ export default function StoryCardList(props: { list: Card[]; amount: number }) {
           image={card.image}
           title={card.title}
           author={card.author}
-          date={card.date}
+          date={!!props.showDate ? card.date : ""}
         />
       );
     }
