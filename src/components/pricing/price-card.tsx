@@ -1,14 +1,38 @@
 "use client";
-import { useState } from "react";
 
 import Pricing from "@/interface/pricing";
-
 interface Props {
   data: Pricing;
+  duration: "monthly" | "yearly";
+  style: object;
 }
 
-export default function PricingCard(props: Props) {
-  const [price, setPrice] = useState(props.data.cost.monthly);
+function getCostText(price: number, duration: "monthly" | "yearly") {
+  let costText: string;
+  const priceText = "$" + price + ".00";
+  if (duration === "monthly") {
+    costText = "per month";
+  } else {
+    costText = "per year";
+  }
 
-  return <div></div>;
+  return { price: priceText, type: costText };
+}
+
+export default function PriceCard(props: Props) {
+  const costText = getCostText(
+    props.data["cost"][props.duration],
+    props.duration
+  );
+
+  return (
+    <div className="price-card">
+      <h2>{props.data.type}</h2>
+      <p>{props.data.description}</p>
+
+      <h3>
+        {costText.price} <span>{costText.type}</span>
+      </h3>
+    </div>
+  );
 }

@@ -1,4 +1,5 @@
 import Header from "@/components/header/header";
+import PriceCardList from "@/components/pricing/price-card-list";
 
 export default function Pricing() {
   return (
@@ -10,6 +11,7 @@ export default function Pricing() {
         }
         image={"/pricing/desktop/hero.jpg"}
       />
+      <PriceCardList />
     </div>
   );
 }

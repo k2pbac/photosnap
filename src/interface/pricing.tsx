@@ -1,6 +1,6 @@
 interface Cost {
-  monthly: string | number;
-  yearly: string | number;
+  monthly: number;
+  yearly: number;
 }
 
 export default interface Pricing {
