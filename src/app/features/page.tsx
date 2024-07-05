@@ -1,6 +1,6 @@
 import FeatureList from "@/components/feature/feature-list";
 import featuresData from "./features.json";
-import Arrow from "@/components/arrow/arrow";
+import BetaContainer from "@/components/beta/beta-container";
 
 export default function Features() {
   return (
@@ -21,18 +21,7 @@ export default function Features() {
         </div>
       </div>
       <FeatureList data={featuresData} amount={featuresData.length} />
-      <div className="beta">
-        <img src="/assets/shared/desktop/bg-beta.jpg" alt="beta-background" />
-        <div className="beta-text">
-          <h2>{"We’re in beta. Get your invite today!".toUpperCase()}</h2>
-          <Arrow
-            text={"GET AN INVITE"}
-            isFooter={false}
-            className={""}
-            style={{ justifyContent: "center" }}
-          />
-        </div>
-      </div>
+      <BetaContainer />
     </div>
   );
 }
