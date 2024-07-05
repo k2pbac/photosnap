@@ -1,0 +1,27 @@
+.features-page {
+  .header {
+    display: flex;
+    align-items: center;
+    background-color: $black;
+    color: white;
+    p {
+      @extend .header-font-large;
+      position: relative;
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0 92px;
+      gap: 1.5rem;
+
+      span {
+        @extend .body-font;
+        opacity: 0.6;
+      }
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+}

@@ -18,7 +18,7 @@ export default function Navbar() {
             <li>STORIES</li>
           </Link>
           <Link href="/features">
-            <li>FEATURE</li>
+            <li>FEATURES</li>
           </Link>
           <Link href="/pricing">
             <li>PRICING</li>
