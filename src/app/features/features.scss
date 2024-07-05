@@ -4,24 +4,30 @@
     align-items: center;
     background-color: $black;
     color: white;
-    p {
-      @extend .header-font-large;
-      position: relative;
-      width: fit-content;
+    div:first-of-type {
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
-      padding: 0 92px;
-      gap: 1.5rem;
+      width: 45%;
+      p {
+        @extend .header-font-large;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 70%;
+        gap: 1.5rem;
 
-      span {
-        @extend .body-font;
-        opacity: 0.6;
+        span {
+          @extend .body-font;
+          opacity: 0.6;
+        }
       }
     }
-    img {
-      max-width: 100%;
+    div:last-of-type {
+      img {
+        max-width: 100%;
+      }
     }
   }
 }

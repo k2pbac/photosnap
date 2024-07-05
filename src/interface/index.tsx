@@ -10,3 +10,9 @@ export default interface Card {
   author: string;
   date: string;
 }
+
+export interface Feature {
+  icon: Image;
+  header: string;
+  description: string;
+}
