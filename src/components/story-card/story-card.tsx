@@ -11,6 +11,7 @@ export default function StoryCard(props: Card) {
     >
       <div className="story-card-overlay"></div>
       <div className="content">
+        <p>{props.date}</p>
         <h2>{props.title}</h2>
         <p>by {props.author}</p>
         <hr></hr>

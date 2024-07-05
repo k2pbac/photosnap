@@ -8,5 +8,5 @@ export default interface Card {
   image: Image;
   title: string;
   author: string;
-  date: string | Date;
+  date: string;
 }
