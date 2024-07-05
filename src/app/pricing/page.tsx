@@ -4,11 +4,11 @@ export default function Pricing() {
   return (
     <div className="pricing-page">
       <Header
-        title={"FEATURES"}
+        title={"PRICING"}
         description={
-          "We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories."
+          "Create your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos."
         }
-        image={"/features/desktop/hero.jpg"}
+        image={"/pricing/desktop/hero.jpg"}
       />
     </div>
   );
