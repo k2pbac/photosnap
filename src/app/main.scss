@@ -43,6 +43,7 @@ $filter: linear-gradient(-180deg, #ffc593 0%, #bc7198 52%, #5a77ff 100%);
   font-size: 13px;
 }
 
+@import "../components/pricing/input.scss";
 @import "../components/navbar/navbar.scss";
 @import "../components/footer/footer.scss";
 @import "../components/card/card.scss";
@@ -50,6 +51,7 @@ $filter: linear-gradient(-180deg, #ffc593 0%, #bc7198 52%, #5a77ff 100%);
 @import "../components/feature/feature.scss";
 @import "../components/header/header.scss";
 @import "../components/pricing/pricing-card.scss";
+@import "../components/beta/beta.scss";
 @import "./home.scss";
 @import "./stories/stories.scss";
 @import "./features/features.scss";

@@ -1,3 +1,4 @@
+import BetaContainer from "@/components/beta/beta-container";
 import Header from "@/components/header/header";
 import PriceCardList from "@/components/pricing/price-card-list";
 
@@ -12,6 +13,8 @@ export default function Pricing() {
         image={"/pricing/desktop/hero.jpg"}
       />
       <PriceCardList />
+
+      <BetaContainer />
     </div>
   );
 }

@@ -12,6 +12,12 @@ interface PricingModel {
 
 export default function PriceCardList() {
   const [cardsList, setCardsList] = useState<React.ReactElement[]>([]);
+  const [type, setType] = useState<"monthly" | "yearly">("monthly");
+
+  const handleCheck = () => {
+    if (type === "monthly") setType("yearly");
+    else setType("monthly");
+  };
 
   useEffect(() => {
     const priceCards: React.ReactElement[] = [];
@@ -20,8 +26,9 @@ export default function PriceCardList() {
       const card = data[keys[i]];
       priceCards.push(
         <PriceCard
+          key={Math.random() * 100}
           data={card}
-          duration={"monthly"}
+          duration={type}
           style={
             keys[i] === "Pro"
               ? { backgroundColor: "black" }
@@ -32,7 +39,24 @@ export default function PriceCardList() {
     }
 
     setCardsList(priceCards);
-  }, []);
+  }, [type]);
 
-  return <div className="price-card-list">{cardsList}</div>;
+  return (
+    <div className="price-card-container">
+      <div className="input-group">
+        <span
+          style={type === "monthly" ? { opacity: "1" } : { opacity: "0.5" }}
+        >
+          Monthly
+        </span>
+        <input onClick={handleCheck} type="checkbox" id="switch" />
+        <label htmlFor="switch">Toggle</label>
+        <input type="checkbox" id="switch-2" />
+        <span style={type === "yearly" ? { opacity: "1" } : { opacity: "0.5" }}>
+          Yearly
+        </span>
+      </div>
+      <div className="price-card-list">{cardsList}</div>
+    </div>
+  );
 }
