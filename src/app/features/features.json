@@ -1,0 +1,56 @@
+[
+  {
+    "icon": {
+      "desktop": "/features/desktop/responsive.svg",
+      "mobile": "/features/mobile/responsive.svg",
+      "tablet": "/features/tablet/responsive.svg"
+    },
+    "header": "100% Responsive",
+    "description": "No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen."
+  },
+  {
+    "icon": {
+      "desktop": "/features/desktop/no-limit.svg",
+      "mobile": "/features/mobile/no-limit.svg",
+      "tablet": "/features/tablet/no-limit.svg"
+    },
+    "header": "No Photo Upload Limit",
+    "description": "Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go."
+  },
+  {
+    "icon": {
+      "desktop": "/features/desktop/embed.svg",
+      "mobile": "/features/mobile/embed.svg",
+      "tablet": "/features/tablet/embed.svg"
+    },
+    "header": "Available to Embed",
+    "description": "Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more."
+  },
+  {
+    "icon": {
+      "desktop": "/features/desktop/custom-domain.svg",
+      "mobile": "/features/mobile/custom-domain.svg",
+      "tablet": "/features/tablet/custom-domain.svg"
+    },
+    "header": "Custom Domain",
+    "description": "With Photosnap subscriptions you can host your stories on your own domain. You can also remove our branding!"
+  },
+  {
+    "icon": {
+      "desktop": "/features/desktop/boost-exposure.svg",
+      "mobile": "/features/mobile/boost-exposure.svg",
+      "tablet": "/features/tablet/boost-exposure.svg"
+    },
+    "header": "Boost Your Exposure",
+    "description": "Users that viewed your story or gallery can easily get notifed of new and featured stories with our built in mailing list."
+  },
+  {
+    "icon": {
+      "desktop": "/features/desktop/drag-drop.svg",
+      "mobile": "/features/mobile/drag-drop.svg",
+      "tablet": "/features/tablet/drag-drop.svg"
+    },
+    "header": "Drag & Drop Image",
+    "description": "Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories."
+  }
+]
