@@ -1,0 +1,26 @@
+{
+  "Basic": {
+    "type": "Basic",
+    "description": "Includes basic usage of our platform. Recommended for new and aspiring photographers.",
+    "cost": {
+      "monthly": 19,
+      "yearly": 190
+    }
+  },
+  "Pro": {
+    "type": "Pro",
+    "description": "More advanced features available. Recommended for photography veterans and professionals.",
+    "cost": {
+      "monthly": 39,
+      "yearly": 390
+    }
+  },
+  "Business": {
+    "type": "Business",
+    "description": "Additional features available such as more detailed metrics. Recommended for business owners.",
+    "cost": {
+      "monthly": 99,
+      "yearly": 990
+    }
+  }
+}
