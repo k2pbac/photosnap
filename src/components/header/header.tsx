@@ -4,7 +4,7 @@ export default function Header(props: {
   image: string;
 }) {
   return (
-    <div className="header">
+    <div className="hero-header">
       <div>
         <p>
           {props.title}

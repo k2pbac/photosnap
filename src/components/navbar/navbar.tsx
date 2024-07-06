@@ -5,13 +5,15 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <div className="navbar">
-      <p>
-        <img
-          className="logo"
-          src="/assets/shared/desktop/logo.svg"
-          alt="logo"
-        />{" "}
-      </p>
+      <Link href="/">
+        <p>
+          <img
+            className="logo"
+            src="/assets/shared/desktop/logo.svg"
+            alt="logo"
+          />{" "}
+        </p>
+      </Link>
       <div>
         <ul>
           <Link href="/stories">
