@@ -1,7 +1,7 @@
 import BetaContainer from "@/components/beta/beta-container";
 import Header from "@/components/header/header";
+import FeatureChart from "@/components/pricing/feature-chart";
 import PriceCardList from "@/components/pricing/price-card-list";
-
 export default function Pricing() {
   return (
     <div className="pricing-page">
@@ -13,7 +13,7 @@ export default function Pricing() {
         image={"/pricing/desktop/hero.jpg"}
       />
       <PriceCardList />
-
+      <FeatureChart />
       <BetaContainer />
     </div>
   );
