@@ -4,16 +4,21 @@
   height: 650px;
   max-width: 100%;
   display: flex;
-
-  img {
+  .picture-container {
     width: 60%;
-  }
-  .card-outer {
-    width: 40%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
-body {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+@media only screen and (max-width: 864px) {
+  .section-1,
+  .section-2,
+  .section-3 {
+    .picture-container {
+      width: 35%;
+    }
+  }
 }

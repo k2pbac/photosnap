@@ -8,35 +8,46 @@
   padding: 60px 100px;
 
   .left {
-    display: flex;
+    display: grid;
+    grid-template-areas:
+      "header header . links"
+      ". . . links"
+      ". . . links"
+      "icons icons icons links";
+    grid-template-columns: auto auto 120px 50px;
+    grid-template-rows: auto 25px 25px auto;
+    grid-auto-flow: column;
     .logo {
+      grid-area: header;
       gap: 72px;
       display: flex;
       flex-direction: column;
       width: fit-content;
-      margin-right: 120px;
-      height: 140px;
-      .icons {
-        display: flex;
-        justify-content: space-between;
-        #facebook,
-        #twitter,
-        #pinterest,
-        #instagram,
-        #youtube {
-          filter: $white-filter;
-          &:hover {
-            cursor: pointer;
-            filter: initial !important;
-          }
+    }
+    .icons {
+      grid-area: icons;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      #facebook,
+      #twitter,
+      #pinterest,
+      #instagram,
+      #youtube {
+        filter: $white-filter;
+        &:hover {
+          cursor: pointer;
+          filter: initial !important;
         }
       }
     }
     .page-links {
+      grid-area: links;
       display: flex;
       align-items: center;
       @extend .header-font-small;
-      height: 140px;
+
       ul {
         display: flex;
         flex-direction: column;
@@ -77,5 +88,29 @@
   p.copyright {
     @extend .body-font;
     opacity: 0.52;
+  }
+}
+
+@media only screen and (max-width: 864px) {
+  .footer {
+    padding: 60px;
+    .left {
+      grid-template-areas:
+        "header header . ."
+        "links links links links"
+        ". . . ."
+        "icons icons icons icons";
+      grid-template-rows: auto 25px 36px auto;
+      .page-links {
+        ul {
+          flex-direction: row;
+        }
+      }
+    }
+    .invite {
+      p.copyright {
+        line-height: normal;
+      }
+    }
   }
 }

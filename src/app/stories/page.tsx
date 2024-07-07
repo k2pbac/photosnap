@@ -1,7 +1,8 @@
 import StoryCardList from "@/components/story-card/story-card-list";
 
-import data from "../../../data.json";
+import data from "../../../stories.json";
 import Arrow from "@/components/arrow/arrow";
+import ImageContainer from "@/components/image-container/image-container";
 
 export default function Stories() {
   const featuredStory = {
@@ -29,8 +30,9 @@ export default function Stories() {
             style={{ color: "white" }}
           />
         </div>
-        <img
-          src="/assets/stories/desktop/moon-of-appalacia.jpg"
+        <ImageContainer
+          path="/assets/stories"
+          image="moon-of-appalacia.jpg"
           alt="featured-story"
         />
       </div>

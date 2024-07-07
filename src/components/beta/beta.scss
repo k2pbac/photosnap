@@ -3,6 +3,7 @@
   position: relative;
   img {
     max-width: 100%;
+    width: 100%;
     height: auto;
   }
 
@@ -20,6 +21,20 @@
     h2 {
       @extend .header-font-large;
       width: 40%;
+    }
+  }
+}
+
+@media only screen and (max-width: 864px) {
+  .beta {
+    .beta-text {
+      padding: 0 32px;
+      h2 {
+        width: 60%;
+      }
+    }
+    .invite {
+      margin-right: 28px;
     }
   }
 }

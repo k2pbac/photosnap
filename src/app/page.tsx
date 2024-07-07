@@ -1,9 +1,10 @@
 import Card from "@/components/card/card";
 
-import data from "../../data.json";
+import data from "../../stories.json";
 import featuresData from "./features/features.json";
 import StoryCardList from "@/components/story-card/story-card-list";
 import FeatureList from "@/components/feature/feature-list";
+import ImageContainer from "@/components/image-container/image-container";
 
 export default function Home() {
   return (
@@ -15,18 +16,18 @@ export default function Home() {
           link="GET AN INVITE"
           style={{ backgroundColor: "black", color: "white" }}
         />
-        <img
-          className="tile-image"
-          src="/home/desktop/create-and-share.jpg"
-          alt="create-image"
-        ></img>
+        <ImageContainer
+          path="/home"
+          image="create-and-share.jpg"
+          alt="create-and-share"
+        />
       </div>
       <div className="section-2">
-        <img
-          className="tile-image"
-          src="/home/desktop/beautiful-stories.jpg"
-          alt="beautiful-image"
-        ></img>
+        <ImageContainer
+          path="/home"
+          image={"beautiful-stories.jpg"}
+          alt="beautiful-stories"
+        />
         <Card
           title="BEAUTIFUL STORIES EVERY TIME"
           body="We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone."
@@ -41,11 +42,11 @@ export default function Home() {
           link="VIEW THE STORIES"
           style={{ backgroundColor: "white", color: "black" }}
         />
-        <img
-          className="tile-image"
-          src="/home/desktop/designed-for-everyone.jpg"
-          alt="designed-image"
-        ></img>
+        <ImageContainer
+          path="/home"
+          image={"designed-for-everyone.jpg"}
+          alt="designed-for-everyone"
+        />
       </div>
       <StoryCardList list={data} amount={4} />
       <FeatureList data={featuresData} amount={3} />

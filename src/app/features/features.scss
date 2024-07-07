@@ -9,3 +9,14 @@
     }
   }
 }
+
+@media only screen and (max-width: 864px) {
+  .features-page {
+    .features-list {
+      flex-direction: row;
+      .feature {
+        max-width: 40%;
+      }
+    }
+  }
+}
