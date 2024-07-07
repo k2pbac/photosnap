@@ -100,6 +100,7 @@
         "links links links links"
         ". . . ."
         "icons icons icons icons";
+      grid-template-rows: auto 25px 36px auto;
       .page-links {
         ul {
           flex-direction: row;

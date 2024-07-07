@@ -1,23 +1,12 @@
-"use client";
-
 import Card from "@/components/card/card";
 
 import data from "../../data.json";
 import featuresData from "./features/features.json";
 import StoryCardList from "@/components/story-card/story-card-list";
 import FeatureList from "@/components/feature/feature-list";
-import { useEffect, useState } from "react";
 import ImageContainer from "@/components/image-container/image-container";
 
 export default function Home() {
-  const [deviceType, setDeviceType] = useState<"desktop" | "tablet" | "mobile">(
-    "desktop"
-  );
-  useEffect(() => {
-    if (window.innerWidth <= 540) setDeviceType("mobile");
-    else if (window.innerWidth <= 864) setDeviceType("tablet");
-  }, []);
-
   return (
     <main className="min-h-screen ">
       <div className="section-1">
