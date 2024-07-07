@@ -16,13 +16,9 @@ export default function Features() {
         description={
           "We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories."
         }
-        image={`${
-          size[0] <= 540
-            ? "features/mobile/hero.jpg"
-            : size[0] <= 864
-            ? "/features/tablet/hero.jpg"
-            : "/features/desktop/hero.jpg"
-        }`}
+        image={`/features/${
+          size[0] <= 540 ? "mobile" : size[0] <= 864 ? "tablet" : "desktop"
+        }/hero.jpg`}
       />
       <FeatureList data={featuresData} amount={featuresData.length} />
       <BetaContainer />

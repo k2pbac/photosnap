@@ -8,15 +8,20 @@
   .price-card-list {
     display: flex;
     align-items: center;
+    gap: 2%;
     .price-card {
+      display: grid;
+      grid-template-columns: 40px auto 40px;
+      grid-template-rows: auto;
+      grid-template-areas:
+        ". title ."
+        ". description ."
+        ". cost ."
+        ". button .";
       background: $grey;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       gap: 18px;
       padding: 40px 0px;
       text-align: center;
-      justify-content: center;
 
       &:nth-of-type(2) {
         background-color: $black;
@@ -33,17 +38,19 @@
         }
       }
       h2 {
+        grid-area: title;
         font-size: 24px;
         font-weight: bold;
         line-height: 25px;
       }
       p {
+        grid-area: description;
         @extend .body-font;
         opacity: 0.6;
         margin-bottom: 18px;
-        width: 80%;
       }
       h3 {
+        grid-area: cost;
         @extend .header-font-large;
 
         span {
@@ -61,6 +68,7 @@
         @extend .header-font-small;
         line-height: normal;
         transition: 0.3s ease;
+        grid-area: button;
         &:hover {
           background-color: $light-grey;
           color: $black;
