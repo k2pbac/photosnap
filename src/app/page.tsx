@@ -7,6 +7,7 @@ import featuresData from "./features/features.json";
 import StoryCardList from "@/components/story-card/story-card-list";
 import FeatureList from "@/components/feature/feature-list";
 import { useEffect, useState } from "react";
+import ImageContainer from "@/components/image-container/image-container";
 
 export default function Home() {
   const [deviceType, setDeviceType] = useState<"desktop" | "tablet" | "mobile">(
@@ -26,18 +27,10 @@ export default function Home() {
           link="GET AN INVITE"
           style={{ backgroundColor: "black", color: "white" }}
         />
-        <img
-          className="tile-image"
-          src={`/home/${deviceType}/create-and-share.jpg`}
-          alt="create-image"
-        ></img>
+        <ImageContainer image={"create-and-share.jpg"} />
       </div>
       <div className="section-2">
-        <img
-          className="tile-image"
-          src={`/home/${deviceType}/beautiful-stories.jpg`}
-          alt="beautiful-image"
-        ></img>
+        <ImageContainer image={"beautiful-stories.jpg"} />
         <Card
           title="BEAUTIFUL STORIES EVERY TIME"
           body="We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone."
@@ -52,11 +45,7 @@ export default function Home() {
           link="VIEW THE STORIES"
           style={{ backgroundColor: "white", color: "black" }}
         />
-        <img
-          className="tile-image"
-          src={`/home/${deviceType}/designed-for-everyone.jpg`}
-          alt="designed-image"
-        ></img>
+        <ImageContainer image={"designed-for-everyone.jpg"} />
       </div>
       <StoryCardList list={data} amount={4} />
       <FeatureList data={featuresData} amount={3} />
