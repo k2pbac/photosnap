@@ -1,11 +1,22 @@
+"use client";
+
 import Card from "@/components/card/card";
 
 import data from "../../data.json";
 import featuresData from "./features/features.json";
 import StoryCardList from "@/components/story-card/story-card-list";
 import FeatureList from "@/components/feature/feature-list";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [deviceType, setDeviceType] = useState<"desktop" | "tablet" | "mobile">(
+    "desktop"
+  );
+  useEffect(() => {
+    if (window.innerWidth <= 540) setDeviceType("mobile");
+    else if (window.innerWidth <= 864) setDeviceType("tablet");
+  }, []);
+
   return (
     <main className="min-h-screen ">
       <div className="section-1">
@@ -17,14 +28,14 @@ export default function Home() {
         />
         <img
           className="tile-image"
-          src="/home/desktop/create-and-share.jpg"
+          src={`/home/${deviceType}/create-and-share.jpg`}
           alt="create-image"
         ></img>
       </div>
       <div className="section-2">
         <img
           className="tile-image"
-          src="/home/desktop/beautiful-stories.jpg"
+          src={`/home/${deviceType}/beautiful-stories.jpg`}
           alt="beautiful-image"
         ></img>
         <Card
@@ -43,7 +54,7 @@ export default function Home() {
         />
         <img
           className="tile-image"
-          src="/home/desktop/designed-for-everyone.jpg"
+          src={`/home/${deviceType}/designed-for-everyone.jpg`}
           alt="designed-image"
         ></img>
       </div>

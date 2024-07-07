@@ -56,3 +56,14 @@ $story-card-background: linear-gradient(
     }
   }
 }
+
+@media only screen and (max-width: 864px) {
+  .story-card-list {
+    .story-card {
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
+      max-width: 50%;
+      width: 50%;
+    }
+  }
+}
