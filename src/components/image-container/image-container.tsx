@@ -1,23 +1,29 @@
-export default function ImageContainer(props: { image: string }) {
+interface Props {
+  image: string;
+  path: string;
+  alt: string;
+}
+
+export default function ImageContainer(props: Props) {
   return (
     <div className="picture-container">
       <picture>
         <source
           media="(max-width: 540px)"
-          srcSet={`/home/mobile/${props.image}`}
+          srcSet={props.path + "/mobile/" + props.image}
         />
         <source
           media="(max-width: 864px)"
-          srcSet={`/home/tablet/${props.image}`}
+          srcSet={props.path + "/tablet/" + props.image}
         />
         <source
           media="(min-width: 865px)"
-          srcSet={`/home/desktop/${props.image}`}
+          srcSet={props.path + "/desktop/" + props.image}
         />
         <img
           className="tile-image object-fill"
-          src={`/home/desktop/${props.image}`}
-          alt={props.image}
+          srcSet={props.path + "/desktop/" + props.image}
+          alt={props.alt}
         ></img>
       </picture>
     </div>

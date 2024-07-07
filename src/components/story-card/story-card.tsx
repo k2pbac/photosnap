@@ -2,12 +2,19 @@
 
 import Card from "../../interface/index";
 import Arrow from "../arrow/arrow";
+import useWindowSize from "@/customWidth";
 
 export default function StoryCard(props: Card) {
+  const size = useWindowSize();
+
   return (
     <div
       className="story-card"
-      style={{ background: `url(${props.image.desktop})` }}
+      style={{
+        background: `url(${
+          size[0] > 530 ? props.image.desktop : props.image.mobile
+        })`,
+      }}
     >
       <div className="story-card-overlay"></div>
       <div className="content">

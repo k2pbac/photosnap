@@ -1,6 +1,6 @@
 import Card from "@/components/card/card";
 
-import data from "../../data.json";
+import data from "../../stories.json";
 import featuresData from "./features/features.json";
 import StoryCardList from "@/components/story-card/story-card-list";
 import FeatureList from "@/components/feature/feature-list";
@@ -16,10 +16,18 @@ export default function Home() {
           link="GET AN INVITE"
           style={{ backgroundColor: "black", color: "white" }}
         />
-        <ImageContainer image={"create-and-share.jpg"} />
+        <ImageContainer
+          path="/home"
+          image="create-and-share.jpg"
+          alt="create-and-share"
+        />
       </div>
       <div className="section-2">
-        <ImageContainer image={"beautiful-stories.jpg"} />
+        <ImageContainer
+          path="/home"
+          image={"beautiful-stories.jpg"}
+          alt="beautiful-stories"
+        />
         <Card
           title="BEAUTIFUL STORIES EVERY TIME"
           body="We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone."
@@ -34,7 +42,11 @@ export default function Home() {
           link="VIEW THE STORIES"
           style={{ backgroundColor: "white", color: "black" }}
         />
-        <ImageContainer image={"designed-for-everyone.jpg"} />
+        <ImageContainer
+          path="/home"
+          image={"designed-for-everyone.jpg"}
+          alt="designed-for-everyone"
+        />
       </div>
       <StoryCardList list={data} amount={4} />
       <FeatureList data={featuresData} amount={3} />
