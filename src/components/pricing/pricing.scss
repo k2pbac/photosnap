@@ -3,12 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 120px;
+  padding: 120px 40px;
   gap: 32px;
   .price-card-list {
     display: flex;
     align-items: center;
-    gap: 2%;
+    gap: 1.5rem;
     .price-card {
       display: grid;
       grid-template-columns: 40px auto 40px;
@@ -72,6 +72,28 @@
         &:hover {
           background-color: $light-grey;
           color: $black;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .price-card-container {
+    .price-card-list {
+      flex-direction: column;
+      .price-card {
+        grid-template-areas:
+          ". title . cost ."
+          ". description . cost ."
+          ". description . . ."
+          ". button . . .";
+        grid-template-columns: 5% 40% 15% auto 5%;
+        grid-template-rows: auto;
+        text-align: left;
+
+        h3 {
+          text-align: right;
         }
       }
     }
