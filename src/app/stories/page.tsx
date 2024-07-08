@@ -22,7 +22,7 @@ export default function Stories() {
       <div className="header">
         {size[0] > 580 ? (
           <div className="featured-story">
-            <p className="sub-header">LAST MONTH'S FEATURED STORY</p>
+            <p className="sub-header">{"LAST MONTH'S FEATURED STORY"}</p>
             <h2>{featuredStory.title}</h2>
             <p className="date">
               <span>{featuredStory.date}</span> by {featuredStory.author}
@@ -43,7 +43,7 @@ export default function Stories() {
         />
         {size[0] <= 580 ? (
           <div className="featured-story-mobile">
-            <p className="sub-header">LAST MONTH"S FEATURED STORY</p>
+            <p className="sub-header">{"LAST MONTH'S FEATURED STORY"}</p>
             <h2>{featuredStory.title}</h2>
             <p className="date">
               <span>{featuredStory.date}</span> by {featuredStory.author}
