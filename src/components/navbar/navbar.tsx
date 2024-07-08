@@ -26,7 +26,8 @@ export default function CustomNav() {
         <Navbar.Link as={Link} href="/pricing">
           PRICING
         </Navbar.Link>
-        <Navbar.Link>
+        <hr></hr>
+        <Navbar.Link className="button-link">
           <button className="invite-button" type="button">
             GET AN INVITE
           </button>

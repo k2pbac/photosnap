@@ -26,11 +26,27 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 767px) {
   .navbar {
     top: 0;
     position: absolute;
     width: 100%;
     z-index: 1;
+    hr {
+      border-top: 1px solid rgba(0, 0, 0, 0.25);
+      width: 80%;
+    }
+    ul {
+      gap: 5px;
+
+      li {
+        &.button-link {
+          padding: 1rem 0;
+        }
+        a {
+          border: none;
+        }
+      }
+    }
   }
 }
