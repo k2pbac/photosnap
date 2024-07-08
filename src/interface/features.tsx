@@ -9,7 +9,7 @@ export default interface kObj {
   "CUSTOM ANALYTICS": deeperKObj;
 }
 
-interface deeperKObj {
+export interface deeperKObj {
   Basic: boolean;
   Pro: boolean;
   Business: boolean;

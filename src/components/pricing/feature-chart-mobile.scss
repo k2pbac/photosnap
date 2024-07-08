@@ -1,0 +1,31 @@
+.feature-chart-mobile {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  padding-top: 0;
+  gap: 1rem;
+  .feature-chart-item {
+    border-bottom: 1px solid #dfdfdf;
+    padding-bottom: 1.5rem;
+    h2 {
+      @extend .header-font-small;
+      line-height: normal;
+      margin-bottom: 1rem;
+    }
+    ul {
+      display: flex;
+      gap: 25%;
+
+      li {
+        font-size: 10px;
+        color: rgba(0, 0, 0, 0.5);
+        letter-spacing: 1.67px;
+        font-weight: bold;
+        span {
+          display: block;
+          padding-top: 0.5rem;
+        }
+      }
+    }
+  }
+}
