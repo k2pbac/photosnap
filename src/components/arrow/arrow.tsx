@@ -1,10 +1,17 @@
 import Link from "next/link";
 
+interface Style {
+  backgroundColor?: string;
+  color?: string;
+  filter?: string;
+  [x: string]: unknown;
+}
+
 export default function Arrow(props: {
   text: string;
   isFooter: boolean;
   className: string;
-  style?: object;
+  style?: Style;
 }) {
   return (
     <div className="invite" style={props.style}>
@@ -12,6 +19,12 @@ export default function Arrow(props: {
         <p>
           <span className="whitespace-nowrap">{props.text} </span>
           <img
+            style={{
+              filter:
+                props.style?.backgroundColor === "black"
+                  ? "brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(138deg) brightness(107%) contrast(102%)"
+                  : "",
+            }}
             className={props.className}
             src="/assets/shared/desktop/arrow.svg"
             alt="arrow"

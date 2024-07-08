@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 120px;
+  padding: 64px;
   width: 40%;
   .card-inner {
     display: flex;
@@ -21,6 +21,16 @@
     .invite {
       gap: 0;
       height: fit-content;
+      width: 100%;
+      a,
+      p {
+        width: 100%;
+      }
+      p {
+        display: flex;
+        gap: 18px;
+        align-items: center;
+      }
     }
   }
 }

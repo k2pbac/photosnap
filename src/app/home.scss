@@ -11,6 +11,16 @@
       height: 100%;
     }
   }
+  .invite {
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+      p {
+        @extend .header-font-small;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 864px) {
@@ -36,6 +46,16 @@
     .picture-container {
       width: 100%;
       height: auto;
+    }
+    .invite {
+      width: 100%;
+      a {
+        p {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
     }
   }
   .section-2 {

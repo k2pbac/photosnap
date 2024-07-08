@@ -29,6 +29,7 @@ export default function Card(props: Props) {
           className={`${
             props.style.backgroundColor === "white" ? "black" : ""
           }`}
+          style={{ backgroundColor: props.style.backgroundColor }}
         />
       </div>
     </div>
