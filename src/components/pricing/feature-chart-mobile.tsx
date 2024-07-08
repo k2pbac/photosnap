@@ -31,5 +31,10 @@ export default function FeatureChartMobile() {
     return features;
   }
 
-  return <div className="feature-chart-mobile">{getFeatureItems()}</div>;
+  return (
+    <div className="feature-chart-mobile">
+      <h1>THE FEATURES</h1>
+      {getFeatureItems()}
+    </div>
+  );
 }

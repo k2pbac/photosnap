@@ -4,6 +4,13 @@
   padding: 4rem 2rem;
   padding-top: 0;
   gap: 1rem;
+  h1 {
+    @extend .header-font-small;
+    line-height: normal;
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+  }
   .feature-chart-item {
     border-bottom: 1px solid #dfdfdf;
     padding-bottom: 1.5rem;
