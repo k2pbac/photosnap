@@ -1,14 +1,12 @@
 "use client";
 
-import useWindowSize from "@/customWidth";
 import Link from "next/link";
 import { Navbar } from "flowbite-react";
 
 export default function CustomNav() {
-  const size = useWindowSize();
   return (
     <Navbar className="navbar fixed-top" fluid rounded>
-      <Navbar.Brand as={Link} href="/">
+      <Navbar.Brand className="logo-link" as={Link} href="/">
         <img
           className="logo"
           src="/assets/shared/desktop/logo.svg"
