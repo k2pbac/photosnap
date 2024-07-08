@@ -25,7 +25,13 @@ export default function FeatureChartMobile() {
         Pro: feature[currentKey]!.Pro,
         Business: feature[currentKey]!.Business,
       } as deeperKObj;
-      return <FeatureChartItem data={featureObject} header={currentKey} />;
+      return (
+        <FeatureChartItem
+          key={currentKey}
+          data={featureObject}
+          header={currentKey}
+        />
+      );
     });
 
     return features;

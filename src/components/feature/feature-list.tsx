@@ -26,7 +26,7 @@ export default function FeatureList(props: {
     }
 
     setFeatureList(featuredCards);
-  }, []);
+  }, [props.amount, props.data]);
 
   return <div className="features-list">{featureList}</div>;
 }
