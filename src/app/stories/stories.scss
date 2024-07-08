@@ -37,3 +37,32 @@
     }
   }
 }
+
+.stories {
+  .featured-story-mobile {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    padding: 48px;
+    gap: 1.5rem;
+
+    .sub-header {
+      @extend .header-font-small;
+    }
+    h2 {
+      @extend .header-font-large;
+    }
+    .date {
+      @extend .card-font-content;
+      span {
+        opacity: 0.75;
+      }
+    }
+    .content {
+      @extend .body-font;
+      opacity: 0.6;
+    }
+  }
+}
