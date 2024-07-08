@@ -9,7 +9,7 @@ export default function ImageContainer(props: Props) {
     <div className="picture-container">
       <picture>
         <source
-          media="(max-width: 480px)"
+          media="(max-width: 530px)"
           srcSet={props.path + "/mobile/" + props.image}
         />
         <source

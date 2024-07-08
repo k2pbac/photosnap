@@ -19,7 +19,7 @@ interface Props {
 
 export default function Card(props: Props) {
   return (
-    <div style={props.style} className="card-outter">
+    <div style={props.style} className="card-outer">
       <div className="card-inner">
         <h2>{props.title}</h2>
         <p className="body">{props.body}</p>
@@ -29,6 +29,7 @@ export default function Card(props: Props) {
           className={`${
             props.style.backgroundColor === "white" ? "black" : ""
           }`}
+          style={{ backgroundColor: props.style.backgroundColor }}
         />
       </div>
     </div>

@@ -14,9 +14,12 @@ $story-card-background: linear-gradient(
     position: relative;
     display: flex;
     align-items: flex-end;
-    padding-bottom: 48px;
     color: white;
     transition: 0.3s ease-in-out;
+    img.background-image {
+      width: 100%;
+      height: 100%;
+    }
     &:hover {
       transform: translateY(-25px);
       cursor: pointer;
@@ -38,7 +41,8 @@ $story-card-background: linear-gradient(
       bottom: 0;
     }
     .content {
-      padding: 0px 32px;
+      position: absolute;
+      padding: 32px;
       display: flex;
       flex-direction: column;
       gap: 6px;
@@ -64,6 +68,40 @@ $story-card-background: linear-gradient(
       background-size: cover !important;
       max-width: 50%;
       width: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .story-card-list {
+    .story-card {
+      max-width: 100%;
+      width: 100%;
+      padding-bottom: 0;
+      height: auto;
+      position: relative;
+      img.background-image {
+        width: 100%;
+        height: 375px;
+        object-fit: fill;
+      }
+
+      .content {
+        width: 100%;
+
+        .invite {
+          a {
+            p {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              img {
+                filter: $white-filter;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

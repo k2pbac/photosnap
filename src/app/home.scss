@@ -11,6 +11,11 @@
       height: 100%;
     }
   }
+  .invite {
+    p {
+      justify-content: flex-start;
+    }
+  }
 }
 
 @media only screen and (max-width: 864px) {
@@ -23,8 +28,32 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 530px) {
   body {
     padding-top: 60px;
+  }
+  .section-1,
+  .section-2,
+  .section-3 {
+    flex-direction: column-reverse;
+    height: auto;
+    align-items: center;
+    .picture-container {
+      width: 100%;
+      height: auto;
+    }
+    .invite {
+      width: 100%;
+      a {
+        p {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+  .section-2 {
+    flex-direction: column;
   }
 }

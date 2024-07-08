@@ -8,14 +8,11 @@ export default function StoryCard(props: Card) {
   const size = useWindowSize();
 
   return (
-    <div
-      className="story-card"
-      style={{
-        background: `url(${
-          size[0] > 530 ? props.image.desktop : props.image.mobile
-        })`,
-      }}
-    >
+    <div className="story-card">
+      <img
+        className="background-image"
+        src={`${size[0] > 530 ? props.image.desktop : props.image.mobile}`}
+      />
       <div className="story-card-overlay"></div>
       <div className="content">
         <p>{props.date}</p>
