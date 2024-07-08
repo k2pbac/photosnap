@@ -116,13 +116,16 @@
 
 @media only screen and (max-width: 480px) {
   .footer {
+    height: auto;
+    flex-direction: column;
+    gap: 6rem;
     .left {
       grid-template-areas:
         ". header ."
         ". icons ."
         ". links .";
       grid-template-columns: 10% auto 10%;
-      grid-template-rows: 1.5rem 100px 100px;
+      grid-template-rows: 1.5rem 100px 126px;
       .logo {
         width: 100%;
         align-items: center;
@@ -132,14 +135,19 @@
       }
       .page-links {
         justify-content: center;
+        text-align: center;
         ul {
           flex-direction: column;
         }
       }
     }
     .invite {
-      gap: 6rem;
+      gap: 2rem;
       align-items: center;
+
+      p.copyright {
+        font-size: 11px;
+      }
     }
   }
 }

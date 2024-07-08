@@ -81,6 +81,22 @@ $story-card-background: linear-gradient(
         height: 375px;
         object-fit: fill;
       }
+
+      .content {
+        width: 100%;
+
+        .invite {
+          a {
+            p {
+              display: flex;
+              justify-content: space-between;
+              img {
+                filter: $white-filter;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
