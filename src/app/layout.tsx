@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import "./main.scss";
-import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer/footer";
+import CustomNav from "@/components/navbar/navbar";
 
 const dm = DM_Sans({ subsets: ["latin"] });
 
@@ -19,8 +19,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css"
+          rel="stylesheet"
+        />
+      </head>
       <body className={dm.className}>
-        <Navbar />
+        <CustomNav />
         {children}
         <Footer />
       </body>
