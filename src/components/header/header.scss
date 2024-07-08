@@ -44,3 +44,19 @@
     }
   }
 }
+
+@media only screen and (max-width: 580px) {
+  .hero-header {
+    flex-direction: column-reverse;
+    div:last-of-type {
+      width: 100%;
+    }
+    div:first-of-type {
+      padding: 66px 28px;
+      width: 100%;
+      p {
+        width: 100%;
+      }
+    }
+  }
+}

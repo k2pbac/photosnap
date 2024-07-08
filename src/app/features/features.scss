@@ -20,3 +20,13 @@
     }
   }
 }
+
+@media only screen and (max-width: 580px) {
+  .features-page {
+    .features-list {
+      .feature {
+        max-width: 75%;
+      }
+    }
+  }
+}

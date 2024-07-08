@@ -9,6 +9,7 @@ export default function BetaContainer() {
   return (
     <div className="beta">
       <img
+        className="main"
         src={`/assets/shared/${
           size[0] <= 580 ? "mobile" : size[0] <= 864 ? "tablet" : "desktop"
         }/bg-beta.jpg`}

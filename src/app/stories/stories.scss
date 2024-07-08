@@ -53,6 +53,7 @@
     }
     h2 {
       @extend .header-font-large;
+      font-size: 32px;
     }
     .date {
       @extend .card-font-content;
