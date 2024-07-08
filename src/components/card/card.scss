@@ -39,6 +39,12 @@
   .card-outer {
     width: 65%;
     padding: 120px 48px;
+
+    .invite {
+      p {
+        justify-content: flex-start;
+      }
+    }
   }
 }
 

@@ -12,13 +12,8 @@
     }
   }
   .invite {
-    a {
-      &:hover {
-        text-decoration: underline;
-      }
-      p {
-        @extend .header-font-small;
-      }
+    p {
+      justify-content: flex-start;
     }
   }
 }
@@ -53,6 +48,7 @@
         p {
           display: flex;
           align-items: center;
+          justify-content: flex-start;
         }
       }
     }

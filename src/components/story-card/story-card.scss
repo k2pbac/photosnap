@@ -93,7 +93,7 @@ $story-card-background: linear-gradient(
           a {
             p {
               display: flex;
-              justify-content: space-between;
+              justify-content: flex-start;
               align-items: center;
               img {
                 filter: $white-filter;
