@@ -99,3 +99,24 @@
     }
   }
 }
+
+@media only screen and (max-width: 580px) {
+  .price-card-container {
+    .price-card-list {
+      flex-direction: column;
+      .price-card {
+        grid-template-areas:
+          ". title ."
+          ". description ."
+          ". cost ."
+          ". button .";
+        grid-template-columns: 10px auto 10px;
+        grid-template-rows: auto;
+        text-align: center;
+        h3 {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
