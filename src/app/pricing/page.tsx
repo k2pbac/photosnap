@@ -3,6 +3,7 @@
 import BetaContainer from "@/components/beta/beta-container";
 import Header from "@/components/header/header";
 import FeatureChart from "@/components/pricing/feature-chart";
+import FeatureChartMobile from "@/components/pricing/feature-chart-mobile";
 import PriceCardList from "@/components/pricing/price-card-list";
 import useWindowSize from "@/customWidth";
 export default function Pricing() {
@@ -19,7 +20,7 @@ export default function Pricing() {
         }/hero.jpg`}
       />
       <PriceCardList />
-      <FeatureChart />
+      {size[0] > 580 ? <FeatureChart /> : <FeatureChartMobile />}
       <BetaContainer />
     </div>
   );
